@@ -1,0 +1,1006 @@
+{
+  "luis_schema_version": "4.0.0",
+  "versionId": "0.1",
+  "name": "BikeMikeLUIS",
+  "desc": "LUIS for BikeMike Bot",
+  "culture": "en-us",
+  "tokenizerVersion": "1.0.0",
+  "intents": [
+    {
+      "name": "BikeMike.GetLatestBikes"
+    },
+    {
+      "name": "BikeMike.OrderBike"
+    },
+    {
+      "name": "None"
+    }
+  ],
+  "entities": [
+    {
+      "name": "BikeMike.Latest",
+      "roles": [],
+      "hierarchyChildren": []
+    },
+    {
+      "name": "BikeMike.NumericalChange",
+      "roles": [],
+      "hierarchyChildren": []
+    },
+    {
+      "name": "HomeAutomation.Location",
+      "inherits": {
+        "domain_name": "HomeAutomation",
+        "model_name": "Location"
+      },
+      "roles": [],
+      "hierarchyChildren": []
+    },
+    {
+      "name": "HomeAutomation.NumericalChange",
+      "inherits": {
+        "domain_name": "HomeAutomation",
+        "model_name": "NumericalChange"
+      },
+      "roles": [],
+      "hierarchyChildren": []
+    },
+    {
+      "name": "HomeAutomation.Setting",
+      "inherits": {
+        "domain_name": "HomeAutomation",
+        "model_name": "Setting"
+      },
+      "roles": [],
+      "hierarchyChildren": []
+    },
+    {
+      "name": "HomeAutomation.Unit",
+      "inherits": {
+        "domain_name": "HomeAutomation",
+        "model_name": "Unit"
+      },
+      "roles": [],
+      "hierarchyChildren": []
+    }
+  ],
+  "composites": [
+    {
+      "name": "BikeMike.Order",
+      "children": [
+        "BikeMike.Color",
+        "BikeMike.BikeTypes"
+      ],
+      "roles": []
+    }
+  ],
+  "closedLists": [
+    {
+      "name": "BikeMike.BikePrice",
+      "subLists": [
+        {
+          "canonicalForm": "100",
+          "list": [
+            "cheap"
+          ]
+        },
+        {
+          "canonicalForm": "200",
+          "list": []
+        },
+        {
+          "canonicalForm": "300",
+          "list": []
+        },
+        {
+          "canonicalForm": "400",
+          "list": []
+        },
+        {
+          "canonicalForm": "500",
+          "list": []
+        },
+        {
+          "canonicalForm": "1000",
+          "list": []
+        },
+        {
+          "canonicalForm": "900",
+          "list": []
+        }
+      ],
+      "roles": []
+    },
+    {
+      "name": "BikeMike.BikeTypes",
+      "subLists": [
+        {
+          "canonicalForm": "Mountain",
+          "list": []
+        },
+        {
+          "canonicalForm": "Electric",
+          "list": []
+        },
+        {
+          "canonicalForm": "Normal",
+          "list": []
+        }
+      ],
+      "roles": []
+    },
+    {
+      "name": "BikeMike.Color",
+      "subLists": [
+        {
+          "canonicalForm": "Green",
+          "list": []
+        },
+        {
+          "canonicalForm": "Red",
+          "list": []
+        },
+        {
+          "canonicalForm": "pink",
+          "list": []
+        },
+        {
+          "canonicalForm": "yellow",
+          "list": []
+        },
+        {
+          "canonicalForm": "blue",
+          "list": []
+        }
+      ],
+      "roles": []
+    },
+    {
+      "name": "BikeMike.PriceOperator",
+      "subLists": [
+        {
+          "canonicalForm": "less than",
+          "list": [
+            "greater than",
+            "equal to",
+            "less than or equal to",
+            "greater than or equal to"
+          ]
+        }
+      ],
+      "roles": []
+    },
+    {
+      "name": "HomeAutomation.DeviceName",
+      "inherits": {
+        "domain_name": "HomeAutomation",
+        "model_name": "DeviceName"
+      },
+      "subLists": [
+        {
+          "canonicalForm": "lamp 1",
+          "list": [
+            "lamps 1"
+          ]
+        },
+        {
+          "canonicalForm": "living room light",
+          "list": []
+        },
+        {
+          "canonicalForm": "kitchen light",
+          "list": []
+        },
+        {
+          "canonicalForm": "christmas tree light",
+          "list": []
+        },
+        {
+          "canonicalForm": "peppercorn lights",
+          "list": []
+        },
+        {
+          "canonicalForm": "ceiling lights",
+          "list": []
+        },
+        {
+          "canonicalForm": "living room lamp 1",
+          "list": []
+        },
+        {
+          "canonicalForm": "night sleep light",
+          "list": []
+        },
+        {
+          "canonicalForm": "fish pond light",
+          "list": []
+        },
+        {
+          "canonicalForm": "den light",
+          "list": []
+        },
+        {
+          "canonicalForm": "levis light",
+          "list": []
+        },
+        {
+          "canonicalForm": "light 31",
+          "list": []
+        },
+        {
+          "canonicalForm": "blue lights",
+          "list": []
+        },
+        {
+          "canonicalForm": "christmas lights",
+          "list": []
+        },
+        {
+          "canonicalForm": "tulip light",
+          "list": [
+            "tulip lights"
+          ]
+        },
+        {
+          "canonicalForm": "evening lights",
+          "list": []
+        },
+        {
+          "canonicalForm": "security system",
+          "list": []
+        },
+        {
+          "canonicalForm": "penelope's light",
+          "list": []
+        },
+        {
+          "canonicalForm": "siena's lamp",
+          "list": []
+        },
+        {
+          "canonicalForm": "dining lamp",
+          "list": []
+        },
+        {
+          "canonicalForm": "reading living room light",
+          "list": []
+        },
+        {
+          "canonicalForm": "sophia's light",
+          "list": []
+        },
+        {
+          "canonicalForm": "matthew lights",
+          "list": []
+        },
+        {
+          "canonicalForm": "steeple led bulb",
+          "list": []
+        },
+        {
+          "canonicalForm": "great light",
+          "list": []
+        },
+        {
+          "canonicalForm": "tulips light",
+          "list": []
+        },
+        {
+          "canonicalForm": "hue light",
+          "list": []
+        },
+        {
+          "canonicalForm": "lcd light",
+          "list": []
+        },
+        {
+          "canonicalForm": "pot light 2",
+          "list": []
+        },
+        {
+          "canonicalForm": "hue white lamp 3",
+          "list": []
+        },
+        {
+          "canonicalForm": "david thermo",
+          "list": []
+        },
+        {
+          "canonicalForm": "main light",
+          "list": [
+            "main lamp"
+          ]
+        },
+        {
+          "canonicalForm": "living room lamp 3",
+          "list": []
+        },
+        {
+          "canonicalForm": "hue lamp two",
+          "list": []
+        },
+        {
+          "canonicalForm": "kuelap light",
+          "list": []
+        },
+        {
+          "canonicalForm": "hue white lamp 1",
+          "list": []
+        },
+        {
+          "canonicalForm": "hallway lamp three",
+          "list": []
+        },
+        {
+          "canonicalForm": "david's light",
+          "list": []
+        },
+        {
+          "canonicalForm": "green light",
+          "list": []
+        },
+        {
+          "canonicalForm": "red light",
+          "list": []
+        },
+        {
+          "canonicalForm": "brake lights",
+          "list": []
+        },
+        {
+          "canonicalForm": "dream lights",
+          "list": []
+        },
+        {
+          "canonicalForm": "weekend lights",
+          "list": []
+        },
+        {
+          "canonicalForm": "lightstrip 3",
+          "list": []
+        },
+        {
+          "canonicalForm": "ceiling light",
+          "list": []
+        },
+        {
+          "canonicalForm": "bronze lamp",
+          "list": []
+        },
+        {
+          "canonicalForm": "thermostat three",
+          "list": []
+        },
+        {
+          "canonicalForm": "sink light two",
+          "list": []
+        },
+        {
+          "canonicalForm": "favorites lights",
+          "list": []
+        },
+        {
+          "canonicalForm": "tv light",
+          "list": []
+        },
+        {
+          "canonicalForm": "biube light",
+          "list": []
+        },
+        {
+          "canonicalForm": "couch light",
+          "list": []
+        },
+        {
+          "canonicalForm": "surface pro three",
+          "list": [
+            "surface pro four"
+          ]
+        },
+        {
+          "canonicalForm": "yellow lights",
+          "list": [
+            "yellow light",
+            "yellow lamp",
+            "yellow lamps"
+          ]
+        },
+        {
+          "canonicalForm": "night light",
+          "list": []
+        },
+        {
+          "canonicalForm": "dining thermostat",
+          "list": []
+        }
+      ],
+      "roles": []
+    },
+    {
+      "name": "HomeAutomation.DeviceType",
+      "inherits": {
+        "domain_name": "HomeAutomation",
+        "model_name": "DeviceType"
+      },
+      "subLists": [
+        {
+          "canonicalForm": "ac",
+          "list": [
+            "air conditioner",
+            "a/c",
+            "a / c",
+            "air conditioning",
+            "air condition"
+          ]
+        },
+        {
+          "canonicalForm": "coffee maker",
+          "list": [
+            "coffee pot",
+            "coffee machine"
+          ]
+        },
+        {
+          "canonicalForm": "coffeemaker",
+          "list": []
+        },
+        {
+          "canonicalForm": "dish washer",
+          "list": [
+            "dish washing machine",
+            "dish-washing machine"
+          ]
+        },
+        {
+          "canonicalForm": "dishwasher",
+          "list": []
+        },
+        {
+          "canonicalForm": "dog feeder",
+          "list": [
+            "feeder"
+          ]
+        },
+        {
+          "canonicalForm": "dvd player",
+          "list": [
+            "dvd players"
+          ]
+        },
+        {
+          "canonicalForm": "fan",
+          "list": [
+            "electric fan",
+            "fans",
+            "ceiling fan",
+            "light-fan"
+          ]
+        },
+        {
+          "canonicalForm": "floor mopping robot",
+          "list": []
+        },
+        {
+          "canonicalForm": "ice maker",
+          "list": []
+        },
+        {
+          "canonicalForm": "lamp",
+          "list": [
+            "lamps"
+          ]
+        },
+        {
+          "canonicalForm": "light",
+          "list": [
+            "lights",
+            "top light",
+            "top lights",
+            "bottom light",
+            "pendant light",
+            "overhead light",
+            "lighting",
+            "spotlights",
+            "pendant lights",
+            "nightlight"
+          ]
+        },
+        {
+          "canonicalForm": "outlet",
+          "list": [
+            "outlets",
+            "switches"
+          ]
+        },
+        {
+          "canonicalForm": "radio",
+          "list": []
+        },
+        {
+          "canonicalForm": "refrigerator",
+          "list": []
+        },
+        {
+          "canonicalForm": "sensor",
+          "list": []
+        },
+        {
+          "canonicalForm": "thermostat",
+          "list": []
+        },
+        {
+          "canonicalForm": "tv",
+          "list": [
+            "television"
+          ]
+        },
+        {
+          "canonicalForm": "washing machine",
+          "list": [
+            "washer"
+          ]
+        },
+        {
+          "canonicalForm": "wifi",
+          "list": [
+            "wifi router",
+            "router"
+          ]
+        },
+        {
+          "canonicalForm": "led bulb",
+          "list": []
+        },
+        {
+          "canonicalForm": "oven",
+          "list": [
+            "toaster"
+          ]
+        },
+        {
+          "canonicalForm": "electric water heater",
+          "list": []
+        },
+        {
+          "canonicalForm": "microwave oven",
+          "list": []
+        },
+        {
+          "canonicalForm": "bread maker",
+          "list": []
+        },
+        {
+          "canonicalForm": "speaker",
+          "list": []
+        },
+        {
+          "canonicalForm": "fridge",
+          "list": []
+        },
+        {
+          "canonicalForm": "humidifier",
+          "list": []
+        },
+        {
+          "canonicalForm": "computer",
+          "list": []
+        },
+        {
+          "canonicalForm": "vacuum cleaner",
+          "list": []
+        },
+        {
+          "canonicalForm": "xbox",
+          "list": []
+        },
+        {
+          "canonicalForm": "hair dryer",
+          "list": [
+            "dryer"
+          ]
+        },
+        {
+          "canonicalForm": "telephone",
+          "list": []
+        },
+        {
+          "canonicalForm": "remote",
+          "list": []
+        },
+        {
+          "canonicalForm": "media",
+          "list": [
+            "media console",
+            "movie"
+          ]
+        },
+        {
+          "canonicalForm": "camera",
+          "list": []
+        },
+        {
+          "canonicalForm": "ipad",
+          "list": [
+            "ipod"
+          ]
+        },
+        {
+          "canonicalForm": "sink",
+          "list": []
+        },
+        {
+          "canonicalForm": "stove",
+          "list": []
+        },
+        {
+          "canonicalForm": "alarms",
+          "list": [
+            "alarm"
+          ]
+        },
+        {
+          "canonicalForm": "showers",
+          "list": [
+            "shower"
+          ]
+        },
+        {
+          "canonicalForm": "sprinkler",
+          "list": [
+            "sprinklers"
+          ]
+        },
+        {
+          "canonicalForm": "cars",
+          "list": [
+            "car"
+          ]
+        },
+        {
+          "canonicalForm": "heaters",
+          "list": [
+            "heater"
+          ]
+        }
+      ],
+      "roles": []
+    },
+    {
+      "name": "HomeAutomation.Quantifier",
+      "inherits": {
+        "domain_name": "HomeAutomation",
+        "model_name": "Quantifier"
+      },
+      "subLists": [
+        {
+          "canonicalForm": "all",
+          "list": []
+        },
+        {
+          "canonicalForm": "any",
+          "list": []
+        },
+        {
+          "canonicalForm": "every",
+          "list": []
+        },
+        {
+          "canonicalForm": "everything",
+          "list": []
+        }
+      ],
+      "roles": []
+    },
+    {
+      "name": "HomeAutomation.SettingType",
+      "inherits": {
+        "domain_name": "HomeAutomation",
+        "model_name": "SettingType"
+      },
+      "subLists": [
+        {
+          "canonicalForm": "backgrounds",
+          "list": []
+        },
+        {
+          "canonicalForm": "brightness",
+          "list": []
+        },
+        {
+          "canonicalForm": "cold",
+          "list": []
+        },
+        {
+          "canonicalForm": "color",
+          "list": []
+        },
+        {
+          "canonicalForm": "contrast",
+          "list": []
+        },
+        {
+          "canonicalForm": "distance",
+          "list": []
+        },
+        {
+          "canonicalForm": "heat",
+          "list": []
+        },
+        {
+          "canonicalForm": "hot",
+          "list": []
+        },
+        {
+          "canonicalForm": "hue",
+          "list": []
+        },
+        {
+          "canonicalForm": "humidity",
+          "list": []
+        },
+        {
+          "canonicalForm": "power levels",
+          "list": [
+            "power level",
+            "power"
+          ]
+        },
+        {
+          "canonicalForm": "saturation",
+          "list": []
+        },
+        {
+          "canonicalForm": "speed",
+          "list": []
+        },
+        {
+          "canonicalForm": "temperature",
+          "list": [
+            "temp"
+          ]
+        },
+        {
+          "canonicalForm": "time",
+          "list": []
+        },
+        {
+          "canonicalForm": "volume level",
+          "list": [
+            "volume",
+            "sound",
+            "sounds"
+          ]
+        },
+        {
+          "canonicalForm": "mode",
+          "list": []
+        }
+      ],
+      "roles": []
+    }
+  ],
+  "patternAnyEntities": [
+    {
+      "name": "BikeMike.OrderNumber",
+      "roles": [],
+      "explicitList": []
+    }
+  ],
+  "regex_entities": [],
+  "prebuiltEntities": [
+    {
+      "name": "datetimeV2",
+      "roles": [
+        "Duration",
+        "Time"
+      ]
+    },
+    {
+      "name": "ordinal",
+      "roles": []
+    }
+  ],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [],
+  "utterances": [
+    {
+      "text": "buy blue mountain cheap bike",
+      "intent": "BikeMike.OrderBike",
+      "entities": []
+    },
+    {
+      "text": "buy cheap bike",
+      "intent": "BikeMike.OrderBike",
+      "entities": []
+    },
+    {
+      "text": "buy green bike",
+      "intent": "BikeMike.OrderBike",
+      "entities": []
+    },
+    {
+      "text": "buy motorbike",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "create an order for a mountain bike price less than 1000 dollars and color blue",
+      "intent": "BikeMike.OrderBike",
+      "entities": []
+    },
+    {
+      "text": "get a mountain please",
+      "intent": "BikeMike.GetLatestBikes",
+      "entities": []
+    },
+    {
+      "text": "get green one",
+      "intent": "BikeMike.GetLatestBikes",
+      "entities": []
+    },
+    {
+      "text": "get latest bikes",
+      "intent": "BikeMike.GetLatestBikes",
+      "entities": [
+        {
+          "entity": "BikeMike.Latest",
+          "startPos": 4,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "get me all types of bikes",
+      "intent": "BikeMike.GetLatestBikes",
+      "entities": []
+    },
+    {
+      "text": "get me electric bike price less than 100 dollars and color green",
+      "intent": "BikeMike.OrderBike",
+      "entities": []
+    },
+    {
+      "text": "get worlds fastest bike",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "list aeroplanes",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "list all green bikes",
+      "intent": "BikeMike.GetLatestBikes",
+      "entities": []
+    },
+    {
+      "text": "list all new motor",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "list latest electric bikes",
+      "intent": "BikeMike.GetLatestBikes",
+      "entities": [
+        {
+          "entity": "BikeMike.Latest",
+          "startPos": 5,
+          "endPos": 10
+        }
+      ]
+    },
+    {
+      "text": "list red ones",
+      "intent": "BikeMike.GetLatestBikes",
+      "entities": []
+    },
+    {
+      "text": "normal bike green color price around 300 dollars",
+      "intent": "BikeMike.OrderBike",
+      "entities": []
+    },
+    {
+      "text": "order a bike less than 200 dollars",
+      "intent": "BikeMike.OrderBike",
+      "entities": []
+    },
+    {
+      "text": "order a cheap electric bike",
+      "intent": "BikeMike.OrderBike",
+      "entities": []
+    },
+    {
+      "text": "order a green bike",
+      "intent": "BikeMike.OrderBike",
+      "entities": []
+    },
+    {
+      "text": "order a mountain bike with red color",
+      "intent": "BikeMike.OrderBike",
+      "entities": []
+    },
+    {
+      "text": "show a pink one please",
+      "intent": "BikeMike.GetLatestBikes",
+      "entities": []
+    },
+    {
+      "text": "show all bikes price less than 200",
+      "intent": "BikeMike.GetLatestBikes",
+      "entities": []
+    },
+    {
+      "text": "show all electric bikes",
+      "intent": "BikeMike.GetLatestBikes",
+      "entities": []
+    },
+    {
+      "text": "show cars",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "show me all red ones",
+      "intent": "BikeMike.GetLatestBikes",
+      "entities": []
+    },
+    {
+      "text": "show me cheap bikes",
+      "intent": "BikeMike.GetLatestBikes",
+      "entities": []
+    },
+    {
+      "text": "show me list of all mountian bikes price less than 200 dollars",
+      "intent": "BikeMike.GetLatestBikes",
+      "entities": []
+    },
+    {
+      "text": "show mountain",
+      "intent": "BikeMike.GetLatestBikes",
+      "entities": []
+    },
+    {
+      "text": "show pink ones",
+      "intent": "BikeMike.GetLatestBikes",
+      "entities": []
+    },
+    {
+      "text": "what is a bike",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "what is a motor",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "what is plane",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "what is your name",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "which movie has this bike",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "who is the father of this bike",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "who is the mother of bikes",
+      "intent": "None",
+      "entities": []
+    }
+  ],
+  "settings": []
+}
