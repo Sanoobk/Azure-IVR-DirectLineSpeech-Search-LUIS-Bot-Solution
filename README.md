@@ -8,15 +8,15 @@ Proof of Concept for the solution design provided by Microsoft in their Azure So
 
 **Base Solution Architecture** - Provided by Microsoft - https://azure.microsoft.com/en-in/solutions/architecture/interactive-voice-response-bot
 
-![Image of Solution from Microsoft](https://github.com/Sanoobk/Azure-DirectLineSpeech-Search-LUIS-Bot-Solution/blob/master/Images/SolutionArchitectureMicrosoft.PNG)
+![Image of Solution from Microsoft](/Images/SolutionArchitectureMicrosoft.PNG)
 
 **Final Solution Architecture** - Modified to replace Skype with Direct Line Speech Client Application and Bing Speech API with Azure Speech Services
 
-![Image of Solution updated](https://github.com/Sanoobk/Azure-DirectLineSpeech-Search-LUIS-Bot-Solution/blob/master/Images/SolutionArchitectureUpdated.png)
+![Image of Solution updated](/Images/SolutionArchitectureUpdated.png)
 
 **Below is a rough aggregation of components, configurations and tools required for completing the solution.**
 
-![Components and Configuraiton list](https://github.com/Sanoobk/Azure-DirectLineSpeech-Search-LUIS-Bot-Solution/blob/master/Images/ComponentsConfiguration.PNG)
+![Components and Configuraiton list](/Images/ComponentsConfiguration.PNG)
 
 
 ## Stage 1: Create and Configure Bot Web App in Azure
@@ -157,7 +157,7 @@ Create and configure the Azure Search Service using the Microsoft [link](https:/
    Database" as the Data Source instead of "Samples". 
    
  - Rest of the   configurations can be followed. Connect to the Database that was   created for this POC in Stage 4.
- - In Step 3 from the above link, you can use the [IndexSchema.png](https://github.com/Sanoobk/Azure-DirectLineSpeech-Search-LUIS-Bot-Solution/blob/master/Images/IndexSchema.PNG) image to configure the index. 
+ - In Step 3 from the above link, you can use the [IndexSchema.png](/Images/IndexSchema.PNG) image to configure the index. 
 	 - Once defined, many field attributes cannot be changed via Portal and API's.
 	 - Copy of the Index Definition JSON file is also added in the source repo for reference.	 
  - In Step 4 create the Indexer and configure a 'Once' schedule.
