@@ -47,7 +47,7 @@ Cosmos DB Account and Container was created using the [instructions](https://doc
 ## Key Source Code Excerpts:
 
 Create a Cosmos DB connection using the instantiation below.
-``` Csharp
+``` csharp
 _myStorage = new CosmosDbStorage(new CosmosDbStorageOptions
 {
 AuthKey = CosmosDBKey,
@@ -57,7 +57,7 @@ DatabaseId = CosmosDBDatabaseName,
 });
 ```
 Below is a sample line of code to write changes to the Cosmos DB using .Net TPL. 'changes' object is a Dictionary that keeps track of the user inputs over each Turn.
-``` CSharp
+``` cSharp
 // Save the user message to your Storage.
 await _myStorage.WriteAsync(changes, cancellationToken);
 ```
